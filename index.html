@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mj Shopping</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Mj Shopping</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Shop</a></li>
+            <li class="auth-button" onclick="openAuthModal()">Login</li>
+        </ul>
+    </nav>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAuthModal()">&times;</span>
+            <div class="auth-form">
+                <section id="login">
+                    <h2>Login</h2>
+                    <form>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                    <div class="switch-link" onclick="showSignup()">Don't have an account? Sign Up</div>
+                </section>
+                <section id="signup">
+                    <h2>Sign Up</h2>
+                    <form>
+                        <label for="newUsername">Username:</label>
+                        <input type="text" id="newUsername" name="newUsername" required>
+                        <label for="newPassword">Password:</label>
+                        <input type="password" id="newPassword" name="newPassword" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <div class="switch-link" onclick="showLogin()">Already have an account? Login</div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <section id="products">
+        <h2>Our Collection</h2>
+        <div class="container">
+            <!-- 10 Product Containers -->
+            <div class="product">
+                <img src="accets/product 1/dress1.jfif" alt="Product 1">
+                <p class="price">$19.99</p>
+                <button onclick="showLoginMessage()">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="accets/product 1/dress12.jfif" alt="Product 2">
+                <p class="price">$29.99</p>
+                <button onclick="showLoginMessage()">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="accets/product 1/dress2.jfif" alt="Product 3">
+                <p class="price">$39.99</p>
+                <button onclick="showLoginMessage()">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="accets/product 1/dress21.jfif" alt="Product 4">
+                <p class="price">$49.99</p>
+                <button onclick="showLoginMessage()">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="accets/product 1/dress3.jfif" alt="Product 5">
+                <p class="price">$59.99</p>
+                <button onclick="showLoginMessage()">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="accets/product 1/dress31.jfif" alt="Product 6">
+                <p class="price">$69.99</p>
+                <button onclick="showLoginMessage()">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="accets/product 1/dress32.jpg" alt="Product 7">
+                <p class="price">$79.99</p>
+                <button onclick="showLoginMessage()">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="accets/product 1/dress4.jpg" alt="Product 8">
+                <p class="price">$89.99</p>
+                <button onclick="showLoginMessage()">Buy Now</button>  
+            </div>
+            <div class="product">
+                <img src="accets/product 1/dress5.jpg" alt="Product 9">
+                <p class="price">$99.99</p>
+                <button onclick="showLoginMessage()">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="accets/product 1/dress6.jpg" alt="Product 10">
+                <p class="price">$109.99</p>
+                <button onclick="showLoginMessage()">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="accets/product 1/dress7.jpg" alt="Product 11">
+                <p class="price">$99.99</p>
+                <button onclick="showLoginMessage()">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="accets/product 1/dress8.jpg" alt="Product 12">
+                <p class="price">$99.99</p>
+                <button onclick="showLoginMessage()">Buy Now</button>
+            </div>
+            
+        </div>
+        <!-- Additional products can be added similarly -->
+    </section>
+
+    <!-- Cart Section (to be implemented) -->
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <p>No items added yet!</p>
+    </section>
+</body>
+
+</html>
